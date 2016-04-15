@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="false"
+     >
+  <TableLayout android:id="@+id/tableLayout01"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:stretchColumns="1"
+      android:paddingTop="20px"
+      >
+      <TableRow android:id="@+id/tableRow1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:scrollbarAlwaysDrawVerticalTrack="false"
+          android:paddingTop="10dp">
+          <TextView android:layout_height="wrap_content"
+              android:id="@+id/province_text"
+              android:layout_width="wrap_content"
+              android:text="省份： "/>
+        <Spinner android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/province_spinner"/>
+      </TableRow>
+      <TableRow android:id="@+id/tableRow"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:scrollbarAlwaysDrawVerticalTrack="false"
+          android:paddingTop="10dip">
+          <TextView android:layout_height="wrap_content"
+              android:id="@+id/city_text"
+              android:layout_width="wrap_content"
+              android:text="城市: " />
+          <Spinner android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/city_spinner"
+              />
+              
+      </TableRow>
+      <TableRow android:id="@+id/tableRow3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:scrollbarAlwaysDrawVerticalTrack="false"
+          android:paddingTop="10dip">
+          <TextView android:text="县城镇："
+              android:id="@+id/county_text"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"/>
+          <Spinner android:id="@+id/county_spinner"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"/>
+      </TableRow>
+      <EditText android:focusableInTouchMode="false"
+          android:id="@+id/display_edit"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:paddingTop="10dip"
+          android:hint="输出结果"/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  </TableLayout>
+</RelativeLayout>
